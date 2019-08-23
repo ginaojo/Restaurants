@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 
 import { MonoText } from '../components/StyledText';
+import { BorderlessButton } from 'react-native-gesture-handler';
 
 export default function HomeScreen() {
   return (
@@ -18,6 +19,7 @@ export default function HomeScreen() {
       <ScrollView
         style={styles.container}
         contentContainerStyle={styles.contentContainer}>
+          <Text style={styles.getStartedText}>Restaurants</Text>
         <View style={styles.welcomeContainer}>
           <Image
             source={
@@ -152,6 +154,7 @@ const styles = StyleSheet.create({
   },
   getStartedText: {
     fontSize: 17,
+    fontWeight: 'Bold',
     color: 'rgba(96,100,109, 1)',
     lineHeight: 24,
     textAlign: 'center',
